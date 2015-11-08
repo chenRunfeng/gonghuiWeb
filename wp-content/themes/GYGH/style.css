@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+.toubu{
+  width:100%;
+  height: 112px;
+  background:  #033a66;
+}
+.w1024{
+	width:960px;
+	margin:0 auto;
+}
+.biaoti{
+	background:#033a66;
+}
+.datu{
+	width:700px;
+	height:318px;
+	float: left;
+	background:url(images/中部背景.png)
+}
+.w900{
+	width:900px;
+	margin:auto auto;
+	}
+.h13{height:12px;clear:both;}
+.h15{height:15px;clear:both;}
+.h25{height:23px;clear:both;}
+
+.shang{
+	width: 960px;
+	height: 318px;
+	margin: 0 auto;
+}
+
+.shang2{
+	width: 260px;
+	height: 318px;
+	float: left;
+}
+
+.liuyan
+{  margin:10px 0 10px 16px;
+ width:240x;
+	}
+.tijiao
+{   margin:5px 0;
+	}
+.zhongjian{
+	width: 960px;
+	height: 210px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+
+
+.part1{
+	width: 293px;
+	height: 210px;
+	float: left;
+	position: relative;
+	font-family: "宋体";
+}
+.part1 .part1-1{
+	width: 90px;
+	height: 30px;
+	position: absolute;
+	left: 312px;
+	top: 1px;
+	} 
+.part1 .part1-2{
+	width: 188px;
+	height: 116px;
+	position: absolute;
+	left: 21px;
+	top: 32px;
+	} 
+.part2{
+	width: 440px;
+	height: 210px;
+	float: left;
+	position: relative;
+}
+
+.part2 .part2-1{
+	position: absolute;
+	font-size: 14px;
+	top: 36px;
+	width: 406px;
+	font-family: "宋体";
+	height: 165px;
+	left: 0px;
+	}
+	
+.part2-2
+{
+	height: 25px;
+	weight: 300px;
+	}
+.part3{
+	width: 227px;
+	height: 210px;
+	float: right;
+	position: relative;
+}
+.part3 .part3-1{
+	width: 90px;
+	height: 30px;
+	position: absolute;
+	left: 76px;
+	top: 1px;
+	} 
+.part3 .part3-2{
+	width: 261px;
+	height: 250px;
+	position: absolute;
+	left: -32px;
+	top: -11px;
+	} 
+.dibua{
+	width: 100%;
+	height: 180px;
+	background: #033a66;
+	margin: 0 auto;
+  
+}
+
+.lianjie{
+	width: 650px;
+	height: 70px;
+	margin: 0 auto;
+	z-index:99;
+}
+
+.h30
+{
+	height: 28px;
+	}
+	
+.lj2{
+	width: 80px;
+	height: 29px;
+	float: left;
+	margin: 5px 15px 0px 0px;
+	font-family: "宋体";
+	font-size: 18px;
+	color: #FFF;
+	text-align: left;
+	font-weight: bold;
+}
+.lj1{
+	width: 160px;
+	height: 29px;
+	background: #fff;
+	float:left;
+	margin:0px 22px 0px 0px;
+}

@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+ul#nav{ width:100%; height:55px; background:#033a66;margin:0 auto} 
+ul#nav li{display:inline; height:55px} 
+ul#nav li a{display:inline-block; padding:0 20px; height:55px; line-height:55px; 
+color:#FFF; font-family:"\5FAE\8F6F\96C5\9ED1"; font-size:16px} 
+ul#nav li a:hover{background:#4f90c5} 
+
+
+

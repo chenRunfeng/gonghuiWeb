@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+ul#nav{ width:100%; height:38px; background:#033a66;margin:0 auto} 
+ul#nav li{display:inline; height:38px} 
+ul#nav li a{display:inline-block; padding:0 15px; height:38px; line-height:38px; 
+color:#FFF; font-family:"\5FAE\8F6F\96C5\9ED1"; font-size:16px} 
+ul#nav li a:hover{background:#4f90c5} 
+
+
+#up_zzjs{
+	width: 239px;
+	height: 176px;
+	line-height: 20px;
+	overflow: hidden;
+}
+#up_zzjs #up_li{list-style-type:none;margin:0;padding:0;margin-left:6px;}
+/*系统支持ie8就选line-height:16px;，但不支持opera 否则选line-height:20px;*/
+#up_zzjs #up_li a{
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.part3 #up_zzjs
+{
+	position: absolute;
+	left: -20px;
+	top: 28px;
+}
+
+
+
+#search-box{width:248px;height:44px;background:url(../images/未标题-2.jpg) no-repeat 0 0; margin-left:12px}
+.input-box{ float:left; width:180px; height:35px; line-height:35px; padding-left:11px; border:0; background:none; text-align:left; font-size:16px; margin-left:4px; margin-top:4px }
+
+.button{ float:right; border:0; background:none; text-indent:-999px; width:45px; height:48px;
+cursor:pointer;outline:none;}
+
+.liuyan-box{ width:237px; height:65px; }
+
+body,ul,li{ margin:0; padding:0; font-size:13px;}
+ul,li{list-style:none;}
+
+.divselect{width:160px;}
+.divselect cite{
+	width: 120px;
+	height: 25px;
+	line-height: 29px;
+	display: block;
+	color: #807a62;
+	cursor: pointer;
+	font-style: normal;
+	padding-left: 4px;
+	padding-right
+: 30px;
+	border: 3px solid #333333;
+	background: url(../images/xjt.png) no-repeat right center;
+}
+.divselect ul{width:155px;border:1px solid #333333; background-color:#ffffff; position:absolute; z-index:20000; margin-top:-1px; display:none;}
+.divselect ul li{height:30px; line-height:30px;}
+.divselect ul li a{display:block; height:30px; color:#333333; text-decoration:none; padding-left:10px; padding-right:10px;}
+.divselect ul li a:hover{background-color:#CCC;}
+
+
+
+.divselect2{width:160px;}
+.divselect2 cite{
+	width: 120px;
+	height: 25px;
+	line-height: 29px;
+	display: block;
+	color: #807a62;
+	cursor: pointer;
+	font-style: normal;
+	padding-left: 4px;
+	padding-right
+: 30px;
+	border: 3px solid #333333;
+	background: url(../images/xjt.png) no-repeat right center;
+}
+.divselect2 ul{width:155px;border:1px solid #333333; background-color:#ffffff; position:absolute; z-index:20000; margin-top:-1px; display:none;}
+.divselect2 ul li{height:30px; line-height:30px;}
+.divselect2 ul li a{display:block; height:30px; color:#333333; text-decoration:none; padding-left:10px; padding-right:10px;}
+.divselect2 ul li a:hover{background-color:#CCC;}
+
+
+
+.divselect3{width:160px;}
+.divselect3 cite{
+	width: 120px;
+	height: 25px;
+	line-height: 29px;
+	display: block;
+	color: #807a62;
+	cursor: pointer;
+	font-style: normal;
+	padding-left: 4px;
+	padding-right
+: 30px;
+	border: 3px solid #333333;
+	background: url(../images/xjt.png) no-repeat right center;
+}
+.divselect3 ul{width:155px;border:1px solid #333333; background-color:#ffffff; position:absolute; z-index:20000; margin-top:-1px; display:none;}
+.divselect3 ul li{height:30px; line-height:30px;}
+.divselect3 ul li a{display:block; height:30px; color:#333333; text-decoration:none; padding-left:10px; padding-right:10px;}
+.divselect3 ul li a:hover{background-color:#CCC;}

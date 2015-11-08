@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+.toubu{
+  width: 100%;
+  height: 173px;
+  background: url(../images/网页头部.gif) no-repeat center top #d3f9ff;
+}
+.w1024{
+	width:1024px;
+	margin:0 auto;
+}
+.biaoti{
+	background:#033a66;
+}
+.datu{
+	width:1024px;
+	height:457px;
+	margin:0 auto;
+	background:url(../images/中部背景.png)
+}
+.w900{
+	width:900px;
+	margin:auto auto;
+	}
+.h15{height:5px;clear:both;}
+.h25{height:25px;clear:both;}
+
+.zhongjian{
+	 width: 1024px;
+     height: 310px;
+  margin:0 auto;
+}
+
+
+
+.part1{
+	width: 280px;
+	height: 310px;
+	float: left;
+	position: relative;
+	font-family: "宋体";
+}
+.part1 .part1-1{
+	width: 90px;
+	height: 30px;
+	position: absolute;
+	left: 72px;
+	top: 43px;
+	} 
+.part1 .part1-2{
+	width:222px;height:158px;position:absolute;left:29px;top:100px;
+	background:url(../images/BANNER下方图片.png)
+	} 
+.part2{
+	width:380px;
+	height: 310px;
+	float:left;
+	border-right:3px solid #d4d4d1;
+	
+	position:relative;
+}
+
+.part2 .part2-1{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 42px;
+	top: 11px;
+	}
+	
+.part2-2
+{
+	height:50px;
+	weight:300px;
+	}
+.part3{
+	width:350px;
+	height: 310px;
+	float:right;
+	position:relative;
+}
+.part3 .part3-1{
+	width: 90px;
+	height: 30px;
+	position: absolute;
+	left: 124px;
+	top: 47px;
+	} 
+
+.dibua{
+  width:1366px;
+  height: 220px;
+  background:#033a66;
+  margin:0 auto;
+  
+}
+
+.friendlink { text-align: center; }
+.friendlink span { position: relative; width: 200px; text-align: left; height: 30px; line-height: 30px; margin-left: 20px; border-radius: 5px 5px 0px 0px; padding-left: 20px; background: rgb(255, 255, 255) url('f_24.jpg') no-repeat scroll 190px center; }
+.friendlink ul { position: absolute; left: 0px; width: 100%; top: 30px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.friendlink ul li { height: 30px; line-height: 30px; text-align: center; border: 1px dashed rgb(231, 231, 231); }
+
+.footer { background:#033a66 none repeat scroll 0% 0%; width: 100%; float: left; padding: 20px 0px; }
