@@ -26,9 +26,9 @@
 <link href="<?php bloginfo('template_directory');?>/styles/index.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/styles/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>" type="text/css" media="screen" />
-<script type="text/javascript" src="Scripts/111jquery.js"></script>
-<script type="text/javascript" src="Scripts/divselect.js"></script>
-<script type="text/javascript" src="Scripts/jquery-2.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/Scripts/111jquery.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/Scripts/divselect.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');?>/Scripts/jquery-2.nivo.slider.pack.js"></script>
      <script type="text/javascript">
 $(function(){
 	$.divselect(".divselect",".inputselect");

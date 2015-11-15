@@ -2,22 +2,35 @@
 
 </div>
 </div>
+<?php
+$args = array(
+  'post_type'=>'slider_type',
+  'orderby'=>'menu_order',
+  'showposts'=>6
+);
+query_posts($args);
+?>
+<?php if(have_posts()): ?>
 <div class="h25"></div>
 <div class="shang">
 <div class="datu">
   <div id="wrapper">
     <div id="slider-wrapper">
       <div id="slider" class="nivoSlider">
-          <a href="http://www.divcss5.com/" target="_blank"><img  src="images/up.jpg" alt="DIVCSujuS5测试图片" title="测试yhy图片" /></a>
-          <a href="http://www.divcss5.com/" target="_blank"><img src="images/toystory.jpg" alt="" title="在线测试图片" /></a>
-          <a href="http://www.divcss5.com/" target="_blank"><img src="images/walle.jpg" alt="幻灯片uhgf测试图片"title="幻灯片测试图片" /></a>
-          <a href="http://www.divcss5.com/" target="_blank"><img src="images/nemo.jpg" title="DIVCSS5hhh测试图片" /></a>
+		      <?php
+				while(have_posts()): the_post();
+				$slider_pic = get_post_meta($post->ID,'ashuwp_slider_pic',true);
+				$slider_link = get_post_meta($post->ID,'ashuwp_slider_link',true);
+				?>
+			<a href="<?php echo $slider_link; ?>" target="_blank"><img src="<?php echo $slider_pic ?>" title="<?php the_title(); ?>" /></a>
+			<?php endwhile; ?>
         </div>
             <div id="htmlcaption" class="nivo-html-caption">
                 <strong><a href="http://www.divcss5.com/">DIVCSS5幻灯hnhh片测试</a></strong>
             </div>
     </div>
 </div>
+<?php endif; wp_reset_query(); ?>
 
 </div>
 <div class="shang2">
