@@ -64,37 +64,31 @@ query_posts($args);
   </div>
     <div class="part1-2"><img src="<?php bloginfo('template_url'); ?>/images/BANNER下方图片.png" width="243" height="172" /></div>
 </div>
+  <?php
+    /*根据文章ID获取分类ID —— 文章页调用
+	$post_id = $post->ID; 
+	$category = get_the_category($post_id); 	
+	$cat_id = $category[0]->cat_ID;
+	$cat_name = $category[0]->cat_name;
+	*/
+	$cat_id ='最新动态'; //指定分类ID
+	$args = array( 
+				'category_name' => $cat_id,  //分类ID
+				'orderby' => 'ID',
+				'order' => 'ASC',
+				'showposts'=>7,
+				);
+	query_posts( $args );
+	if( have_posts() ) : while( have_posts() ) : the_post();
+  ?>
   <div class="part2">
   <table width="450" height="160
   " border="0" cellpadding="0" cellspacing="0" class="part2-1">
   <tr>
-    <td width="354"><a href="...">非12级用户统一使用校园卡缴费，持本人校</a></td>
-    <td width="113">2015-10-10</td>
+    <td width="354"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></td>
+    <td width="113"><?php the_time(get_option(date_format))?></td>
   </tr>
-  <tr>
-    <td><a href="...">非12级用户统一使用校园卡缴费，持本人校</a></td>
-    <td>2015-10-10</td>
-  </tr>
-  <tr>
-    <td><a href="...">非12级用户统一使用校园卡缴费，持本人校</a></td>
-    <td>2015-10-10</td>
-  </tr>
-  <tr>
-    <td><a href="...">非12级用户统一使用校园卡缴费，持本人校</a></td>
-    <td>2015-10-10</td>
-  </tr>
-  <tr>
-    <td><a href="...">非12级用户统一使用校园卡缴费，持本人校</a></td>
-    <td>2015-10-10</td>
-  </tr>
-  <tr>
-    <td><a href="...">非12级用户统一使用校园卡缴费，持本人校</a></td>
-    <td>2015-10-10</td>
-  </tr>
-  <tr>
-   <td><a href="...">非12级用户统一使用校园卡缴费，持本人校</a></td>
-    <td>2015-10-10</td>
-  </tr>
+  <?php endwhile;endif;?>
 </table>
   </div>
   <div class="part3">
@@ -104,20 +98,37 @@ query_posts($args);
   <div id="up_zzjs">
 <div id="marqueebox">
 <div id="up_li">
+  <?php
+    /*根据文章ID获取分类ID —— 文章页调用
+	$post_id = $post->ID; 
+	$category = get_the_category($post_id); 	
+	$cat_id = $category[0]->cat_ID;
+	$cat_name = $category[0]->cat_name;
+	*/
+	$cat_name ='最新通知'; //指定分类ID
+	$args = array( 
+				'category_name' => $cat_name,  //分类ID
+				'orderby' => 'ID',
+				'order' => 'ASC'
+				);
+	query_posts( $args );
+	for($i=0;$i<6;$i++)
+	{
+	  if( have_posts())
+	  {
+	    the_post();
+     ?>
 <div id="up_li">
-  <p><a href="http://www.zzjs.net/" target="_blank">滚动文字一滚动文滚动文滚动文</a>亲爱</p>
-</div>
-<div id="up_li">
-  <p><a href="http://www.zzjs.net/" target="_blank">滚动文字一滚动文滚动文滚动文</a>睡醒</p>
-</div><div id="up_li">
-  <p><a href="http://www.zzjs.net/" target="_blank">滚动文字一滚动文滚动文滚动文</a>社区</p>
-</div><div id="up_li">
-  <p><a href="http://www.zzjs.net/" target="_blank">滚动文字一滚动文滚动文滚动文</a>啊傻</p>
-</div><div id="up_li">
-  <p><a href="http://www.zzjs.net/" target="_blank">滚动文字一滚动文滚动文滚动文</a>阿萨</p>
-</div><div id="up_li">
-  <p><a href="http://www.zzjs.net/" target="_blank">滚动文字一滚动文滚动文滚动文上的</a></p>
-</div>
+  <p><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title();?></a></p>
+  </div>
+  <?php
+	  }
+	  else{
+	  break;
+	  }
+	}
+	 // : while( have_posts() ) : the_post();
+  ?>
 <script language="javascript">
 function startmarquee(lh,speed,delay) {
 var p=false;
@@ -145,7 +156,6 @@ setTimeout(start,delay);
 }
 startmarquee(20,20,1500);
 </script>
-
   </div>
   </div>
   </div>
